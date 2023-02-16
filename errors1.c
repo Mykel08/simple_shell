@@ -4,7 +4,7 @@
  * _erratoi - converts a string to an integer
  * @s: the string to be converted
  * Return: 0 if no numbers in string, converted number otherwise
- * -1 on error
+ *       -1 on error
  */
 
 int _erratoi(char *s)
@@ -13,8 +13,8 @@ int _erratoi(char *s)
 	unsigned long int result = 0;
 
 	if (*s == '+')
-		s++; /*TODO: why does this make main return 255? */
-	for (i = 0; s[i] != '\0'; i++)
+		s++;  /* TODO: why does this make main return 255? */
+	for (i = 0;  s[i] != '\0'; i++)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
@@ -32,9 +32,9 @@ int _erratoi(char *s)
 /**
  * print_error - prints an error message
  * @info: the parameter & return info struct
- * #estr: string containing specified error type
+ * @estr: string containing specified error type
  * Return: 0 if no numbers in string, converted number otherwise
- * -1 on error
+ *        -1 on error
  */
 
 void print_error(info_t *info, char *estr)
